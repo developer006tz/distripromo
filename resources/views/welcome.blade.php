@@ -1,132 +1,984 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Laravel</title>
+    <!-- SEO Meta Description -->
+    <meta name="description" content="">
+    <meta name="author" content="Themeland">
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Title  -->
+    <title>Distrimusic | Home</title>
+    <script>
+        const startTime = performance.now();
+        window.addEventListener('load', () => {
+            const endTime = performance.now();
+            const renderingTimeInSeconds = (endTime - startTime) / 1000;
+            const loadTimeElement =  document.getElementById("loadTime");
+            loadTimeElement.textContent = `Page rendering time: ${renderingTimeInSeconds.toFixed(2)} seconds`;
+        });
+    </script>
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.text-center{text-align:center}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
-        </style>
+    <!-- Favicon  -->
+    <link rel="icon" href="{{ URL::to('website/assets/img/favicon.png') }}">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+    <!-- ***** All CSS Files ***** -->
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+    <!-- Style css -->
+    <link rel="stylesheet" href="{{ URL::to('website/assets/css/style.css') }}">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{{ URL::to('website/assets/css/responsive.css') }}">
+
+</head>
+
+<body class="homepage-3">
+<!--====== Preloader Area Start ======-->
+<div id="preloader">
+    <!-- Distrimusic Preloader -->
+    <div id="distrimusic-preloader" class="distrimusic-preloader">
+        <!-- Preloader Animation -->
+        <div class="preloader-animation">
+            <!-- Spinner -->
+            <div class="spinner"></div>
+            <!-- Loader -->
+            <div class="loader">
+                <span data-text-preloader="D" class="animated-letters">D</span>
+                <span data-text-preloader="I" class="animated-letters">I</span>
+                <span data-text-preloader="S" class="animated-letters">S</span>
+                <span data-text-preloader="T" class="animated-letters">T</span>
+                <span data-text-preloader="R" class="animated-letters">R</span>
+                <span data-text-preloader="I" class="animated-letters">I</span>
+                <span data-text-preloader="M" class="animated-letters">M</span>
+                <span data-text-preloader="U" class="animated-letters">U</span>
+                <span data-text-preloader="S" class="animated-letters">S</span>
+                <span data-text-preloader="I" class="animated-letters">I</span>
+                <span data-text-preloader="C" class="animated-letters">C</span>
+            </div>
+            <p class="fw-5 text-center text-uppercase">Loading...</p>
+        </div>
+        <!-- Loader Animation -->
+        <div class="loader-animation">
+            <div class="row h-100">
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
                 </div>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+                <!-- Single Loader -->
+                <div class="col-3 single-loader p-0">
+                    <div class="loader-bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--====== Preloader Area End ======-->
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
+<!--====== Scroll To Top Area Start ======-->
+<div id="scrollUp" title="Scroll To Top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+<!--====== Scroll To Top Area End ======-->
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
+<div class="main overflow-hidden">
+    <!-- ***** Header Start ***** -->
+    <header id="header">
+        <!-- Navbar -->
+        <nav data-aos="zoom-out" data-aos-delay="800" class="navbar navbar-expand">
+            <div class="container header">
+                <!-- Navbar Brand-->
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-regular" width="43" height="52" src="{{ URL::to('website/assets/img/logo/logo-white.png') }}" alt="brand-logo">
+                    <img class="navbar-brand-sticky" width="43" height="52" src="{{ URL::to('website/assets/img/logo/logo.png') }}" alt="sticky brand-logo">
+                </a>
+                <div class="ml-auto"></div>
+                <!-- Navbar -->
+                <ul class="navbar-nav items">
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#pricing">Pricing</a>
+                    </li>
+                        <li class="nav-item">
+                             <a class="nav-link scroll" href="#contact">Contact</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#faq">Faq</a>
+                    </li>
+                </ul>
+                <!-- Navbar Icons -->
+                <ul class="navbar-nav icons">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item social">
+                        <a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                    <li class="nav-item social">
+                        <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+                <!-- Navbar Toggler -->
+                <ul class="navbar-nav toggle">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                            <i class="fas fa-bars toggle-icon m-0"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Navbar Action Button -->
+                <ul class="navbar-nav action">
+                    <li class="nav-item ml-3">
+                        <a href="{{url('login')}}" class="btn ml-lg-auto btn-bordered-white"><i
+                                class="fas fa-paper-plane contact-icon mr-md-2"></i>Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ***** Header End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <section id="home" class="section welcome-area bg-overlay overflow-hidden d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Welcome Intro Start -->
+                <div class="col-12 col-md-6">
+                    <div class="welcome-intro">
+                        <h1 class="text-white text-center text-md-left">Distrimusic <br> <span
+                                class="fw-4">Resell and Grow</span></h1>
+                        <p class="text-white text-center text-md-left my-4">The Fastest, Most Affordable, and Most Advanced Digital Panel in the World. We offer you a chance to earn a great income by reselling our high-quality social media services on your own platforms or on various online marketplaces. Distrimusic is simply unbeatable in speed, price, and performance..</p>
+                        <!-- Buttons -->
+                        <div
+                            class="button-group d-flex align-items-center justify-content-center justify-content-md-start">
+                            <a href="{{url('login')}}" class="btn btn-bordered-white">Start a Project</a>
+                            <!-- Play Button -->
+                            <a class="play-btn" data-fancybox data-width="640" data-height="360"
+                               data-small-btn="true" href="https://youtu.be/TKnufs85hXk">
+                                <div class="btn-circle play-animation"></div>
+                                <div class="btn-circle play-animation animation-short"></div>
+                                <!-- Play Icon -->
+                                <div class="play-icon">
+                                    <i class="fas fa-play"></i>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                <div class="col-12 col-md-6">
+                    <!-- Welcome Thumb -->
+                    <div class="welcome-thumb-wrapper pt-3 pt-md-5 mt-5">
+                            <span class="welcome-thumb-1">
+                                <img class="welcome-animation d-block ml-auto" src="{{ URL::to('website/assets/img/welcome/thumb_7.png') }}"
+                                     alt="">
+                            </span>
+                        <span class="welcome-thumb-2">
+                                <img class="welcome-animation d-block" src="{{ URL::to('website/assets/img/welcome/thumb_8.png') }}" alt="">
+                            </span>
+                        <span class="welcome-thumb-3">
+                                <img class="welcome-animation d-block" src="{{ URL::to('website/assets/img/welcome/thumb_9.png') }}" alt="">
+                            </span>
+                        <span class="welcome-thumb-4">
+                                <img class="welcome-animation d-block" src="{{ URL::to('website/assets/img/welcome/thumb_10.png') }}" alt="">
+                            </span>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <!-- Shape Bottom -->
+        <div class="welcome-shape">
+            <img src="{{ URL::to('website/assets/img/hero_shape.png') }}" alt="">
+        </div>
+    </section>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Promo Area Start ***** -->
+    <section class="section promo-area ptb_100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 res-margin">
+                    <!-- Single Promo -->
+                    <div class="single-promo grad-hover text-center p-5">
+                        <!-- Promo Wrapper -->
+                        <div class="promo-wrapper">
+                            <h3 class="mb-3">Zero to Hero</h3>
+                            <p>If you want to be a <strong>successful social media marketer</strong>, you need Distrimusic. Distrimusic is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>high-quality services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget. Distrimusic is <strong>fast, affordable, and powerful</strong>. With Distrimusic, you can <strong>achieve your social media marketing goals</strong>. You can go from zero to hero in no time. Join Distrimusic today and start your <strong>journey to success</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 res-margin">
+                    <!-- Single Promo -->
+                    <div class="single-promo grad-hover active text-center p-5">
+                        <!-- Promo Wrapper -->
+                        <div class="promo-wrapper">
+                            <h3 class="mb-3">Dedicated Support</h3>
+                            <p>Distrimusic is dedicated to giving you the <strong>best customer service ever</strong>. We want you to <strong>love our products and services</strong>. That’s why we have a friendly support team that is always ready to help you with any questions or issues. You can reach our support team by email, phone, or live chat. We are available Monday to Friday, 9 am to 5 pm GMT. We will reply to your inquiries within 24 hours or less. You can also visit our FAQ page for quick answers to common questions. We <strong>value your business</strong> and we can’t wait to serve you. Thank you for choosing Distrimusic as your <strong>social media marketing partner</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Promo -->
+                    <div class="single-promo grad-hover text-center p-5">
+                        <!-- Promo Wrapper -->
+                        <div class="promo-wrapper">
+                            <h3 class="mb-3">How it Works</h3>
+                            <p>Distrimusic is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>top-notch services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget.
+
+How to use Distrimusic:
+
+Sign up for free with your email or Facebook/Google account.
+Add funds with PayPal, credit card, or cryptocurrency. Earn free credits by referring friends.
+Pick a service and place an order. Use smart filters to find the best options.
+Relax and wait for delivery. Track your order and contact support if needed.
+Join Distrimusic and <strong>make money from social media marketing</strong>.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Promo Area End ***** -->
+
+    <!-- ***** Content Area Start ***** -->
+    <section id="about" class="section content-area bg-grey ptb_100">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-6">
+                    <!-- Content Inner -->
+                    <div class="content-inner text-center">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center mb-3">
+                            <h2>We help to grow your business.</h2>
+                            <p class="d-none d-sm-block mt-4">Grow your business with Distrimusic. Resell our top social media services. Boost your online presence and sales. Join us today.</p>
+                            <p class="d-block d-sm-none mt-4">Grow your business with Distrimusic. Resell our top social media services. Boost your online presence and sales. Join us today</p>
+                        </div>
+                        <!-- Content List -->
+                        <ul class="content-list text-left">
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Followers</b><br>Increase your audience and credibility. Attract more customers and opportunities</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Likes</b><br>Show your popularity and engagement. Boost your ranking and visibility.</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Views</b><br>Expand your reach and exposure. Impress your potential clients and partners</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Comments</b><br>Generate feedback and interaction. Build trust and loyalty with your fans</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-1"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Share</b><br>Spread your message and brand. Create viral effects and referrals.</span>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Service Thumb -->
+                    <div class="service-thumb mx-auto pt-4 pt-lg-0">
+                        <img src="{{ URL::to('website/assets/img/content/content_thumb.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Content Area End ***** -->
+
+    <!-- ***** Content Area Start ***** -->
+    <section class="section content-area ptb_100">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-6">
+                    <!-- Profile Circle Wrapper -->
+                    <div class="profile-circle-wrapper circle-animation d-none d-sm-block">
+                        <!-- Profile Inner -->
+                        <div class="profile-inner">
+                            <!-- Profile Circle -->
+                            <div class="profile-circle circle-lg">
+                                    <span class="profile-icon icon-1">
+                                        <img class="icon-1-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_1.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-2">
+                                        <img class="icon-2-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_2.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-3">
+                                        <img class="icon-3-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_1.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-4">
+                                        <img class="icon-4-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_2.svg') }}" alt="" />
+                                    </span>
+                            </div>
+
+                            <!-- Profile Circle -->
+                            <div class="profile-circle circle-md">
+                                    <span class="profile-icon icon-5">
+                                        <img class="icon-5-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_3.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-6">
+                                        <img class="icon-6-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_3.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-7">
+                                        <img class="icon-7-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_3.svg') }}" alt="" />
+                                    </span>
+                            </div>
+
+                            <!-- Profile Circle -->
+                            <div class="profile-circle circle-sm">
+                                    <span class="profile-icon icon-8">
+                                        <img class="icon-8-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_4.svg') }}" alt="" />
+                                    </span>
+                                <span class="profile-icon icon-9">
+                                        <img class="icon-9-img"
+                                             src="{{ URL::to('website/assets/img/content/profile-icons/profile_icon_4.svg') }}" alt="" />
+                                    </span>
+                            </div>
+                        </div>
+                        <img class="folder-img" src="{{ URL::to('website/assets/img/content/folders.png') }}" alt="" />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- Content Inner -->
+                    <div class="content-inner text-center pt-sm-4 pt-lg-0 mt-sm-5 mt-lg-0">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center mb-3">
+                            <h2>Work smarter,<br> not harder.</h2>
+                            <p class="d-none d-sm-block mt-4">🎵 Resell top social media services. Choose, order, relax. We do the rest. 🎵</p>
+                            <p class="d-block d-sm-none mt-4">🎵 Resell top social media services. Choose, order, relax. We do the rest. 🎵.</p>
+                        </div>
+                        <!-- Content List -->
+                        <ul class="content-list text-left">
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Social Media Marketing</b><br>🚀 Pick any social media service. Customize and order. Boost your online success. 🚀</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Reselling Business</b><br>🚀 Resell our services. Set your prices and profits. Earn free credits. Grow. 🚀</span>
+                                </div>
+                            </li>
+                            <!-- Single Content List -->
+                            <li class="single-content-list media py-2">
+                                <div class="content-icon pr-4">
+                                    <span class="color-2"><i class="fas fa-angle-double-right"></i></span>
+                                </div>
+                                <div class="content-text media-body">
+                                        <span><b>Customer Support</b><br>👋 Need help? Email, call, or chat with us. Fast response. FAQ available. 👋</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-bordered mt-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Content Area End ***** -->
+
+    <!-- ***** Service Area End ***** -->
+    <section id="services" class="section service-area bg-grey ptb_100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>We provide the best digital services</h2>
+                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        </p>
+                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-rocket-launch color-1 icon-bg-1"></span>
+                        <h3 class="my-3">Data Analytics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-monitoring color-2 icon-bg-2"></span>
+                        <h3 class="my-3">Website Growth</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-web color-3 icon-bg-3"></span>
+                        <h3 class="my-3">Seo Ranking</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-smartphone color-4 icon-bg-4"></span>
+                        <h3 class="my-3">App Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-email color-5 icon-bg-5"></span>
+                        <h3 class="my-3">Email Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Service -->
+                    <div class="single-service text-center p-4">
+                        <span class="flaticon-affiliate color-6 icon-bg-6"></span>
+                        <h3 class="my-3">Affiliate Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
+                            incididunt emit.</p>
+                        <a class="service-btn mt-3" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Service Area End ***** -->
+
+    <!-- ***** Price Plan Area Start ***** -->
+    <section id="pricing" class="section price-plan-area overflow-hidden ptb_100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>Our Price Plans</h2>
+                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        </p>
+                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="row price-plan-wrapper">
+                        <div class="col-12 col-md-6">
+                            <!-- Single Price Plan -->
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <!-- Plan Title -->
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Basic</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>
+                                </div>
+                                <!-- Plan Price -->
+                                <div class="plan-price pb-2 pb-sm-3">
+                                    <span class="color-primary fw-7">$</span>
+                                    <span class="h1 fw-7">49</span>
+                                    <sub class="validity text-muted fw-5">/mo</sub>
+                                </div>
+                                <!-- Plan Description -->
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">5GB Linux Web Space</li>
+                                        <li class="py-2">5 MySQL Databases</li>
+                                        <li class="py-2 text-muted">24/7 Tech Support</li>
+                                        <li class="py-2 text-muted">Daily Backups</li>
+                                    </ul>
+                                </div>
+                                <!-- Plan Button -->
+                                <div class="plan-button">
+                                    <a href="#" class="btn btn-bordered mt-3">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-4 mt-md-0">
+                            <!-- Single Price Plan -->
+                            <div class="single-price-plan color-2 bg-hover active hover-top text-center p-5">
+                                <!-- Plan Title -->
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Pro <sup><span
+                                                class="badge badge-pill badge-warning ml-2">Recommended</span></sup>
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>
+                                </div>
+                                <!-- Plan Price -->
+                                <div class="plan-price pb-2 pb-sm-3">
+                                    <span class="color-primary fw-7">$</span>
+                                    <span class="h1 fw-7">129</span>
+                                    <sub class="validity text-muted fw-5">/mo</sub>
+                                </div>
+                                <!-- Plan Description -->
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">10GB Linux Web Space</li>
+                                        <li class="py-2">50 MySQL Databases</li>
+                                        <li class="py-2">Unlimited Email</li>
+                                        <li class="py-2">Daily Backups</li>
+                                    </ul>
+                                </div>
+                                <!-- Plan Button -->
+                                <div class="plan-button">
+                                    <a href="#" class="btn btn-bordered active mt-3">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5">
+                <p class="pt-4 fw-5">Not sure what to choose? <a class="service-btn" href="#"><strong>Contact
+                            Us</strong></a></p>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Price Plan Area End ***** -->
+
+    <!-- ***** Review Area Start ***** -->
+    <section id="review" class="section review-area bg-overlay ptb_100">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-4">
+                    <!-- Section Heading -->
+                    <div class="section-heading m-0">
+                        <h2 class="text-white">Customers loves us</h2>
+                        <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+                            asperiores sit.</p>
+                        <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Laborum obcaecati.</p>
+                        <a href="#" class="btn btn-bordered-white mt-4">Work with Us</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row mt-5 mt-lg-0">
+                        <div class="col-12 col-md-6 res-margin">
+                            <!-- Single Review -->
+                            <div class="single-review bg-inherit p-5">
+                                <!-- Review Content -->
+                                <div class="review-content">
+                                    <!-- Review Text -->
+                                    <div class="review-text">
+                                        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab
+                                            nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>
+                                    </div>
+                                    <!-- Quotation Icon -->
+                                    <div class="quot-icon">
+                                        <img class="avatar-sm" src="{{ URL::to('website/assets/img/quote.png') }}" alt="">
+                                    </div>
+                                </div>
+                                <!-- Reviewer -->
+                                <div class="reviewer media mt-3">
+                                    <!-- Reviewer Thumb -->
+                                    <div class="reviewer-thumb">
+                                        <img class="avatar-lg radius-100" src="{{ URL::to('website/assets/img/avatar/avatar-1.png') }}"
+                                             alt="">
+                                    </div>
+                                    <!-- Reviewer Media -->
+                                    <div class="reviewer-meta media-body align-self-center ml-4">
+                                        <h5 class="reviewer-name text-white mb-2">Junaid Hasan</h5>
+                                        <h6 class="text-white-50 fw-6">CEO, Themeland</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <!-- Single Review -->
+                            <div class="single-review bg-inherit p-5">
+                                <!-- Review Content -->
+                                <div class="review-content">
+                                    <!-- Review Text -->
+                                    <div class="review-text">
+                                        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab
+                                            nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>
+                                    </div>
+                                    <!-- Quotation Icon -->
+                                    <div class="quot-icon">
+                                        <img class="avatar-sm" src="{{ URL::to('website/assets/img/quote.png') }}" alt="">
+                                    </div>
+                                </div>
+                                <!-- Reviewer -->
+                                <div class="reviewer media mt-3">
+                                    <!-- Reviewer Thumb -->
+                                    <div class="reviewer-thumb">
+                                        <img class="avatar-lg radius-100" src="{{ URL::to('website/assets/img/avatar/avatar-2.png') }}"
+                                             alt="">
+                                    </div>
+                                    <!-- Reviewer Media -->
+                                    <div class="reviewer-meta media-body align-self-center ml-4">
+                                        <h5 class="reviewer-name text-white mb-2">Yasmin Akter</h5>
+                                        <h6 class="text-white-50 fw-6">Designer, Themeland</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Review Area End ***** -->
+
+    <!--====== Contact Area Start ======-->
+    <section id="contact" class="contact-area ptb_100">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center mb-3">
+                        <h2>Let's connect!</h2>
+                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        </p>
+                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Laborum obcaecati.</p>
+                    </div>
+                    <!-- Contact Us -->
+                    <div class="contact-us">
+                        <ul>
+                            <!-- Contact Info -->
+                            <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
+                                <span><i class="fas fa-mobile-alt fa-3x"></i></span>
+                                <a class="d-block my-2" href="#">
+                                    <h3>+255 746 828 843</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </li>
+                            <!-- Contact Info -->
+                            <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
+                                <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
+                                <a class="d-none d-sm-block my-2" href="#">
+                                    <h3>info@distrimusic.com</h3>
+                                </a>
+                                <a class="d-block d-sm-none my-2" href="#">
+                                    <h3>mail@your company.com</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pt-4 pt-lg-0">
+                    <!-- Contact Box -->
+                    <div class="contact-box text-center">
+                        <!-- Contact Form -->
+                        <form id="contact-form" method="POST" action="assets/php/mail.php">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Name"
+                                               required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name"
+                                               placeholder="Company Name" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                               required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="subject" placeholder="Phone"
+                                               required="required">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message"
+                                                      required="required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-bordered active btn-block mt-3"><span
+                                            class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== Contact Area End ======-->
+
+    <!--====== Call To Action Area Start ======-->
+    <section class="section cta-area bg-overlay ptb_100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center m-0">
+                        <h2 class="text-white">Looking for the best digital agency &amp; marketing solution?</h2>
+                        <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
+                            asperiores sit.</p>
+                        <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Laborum obcaecati.</p>
+                        <a href="#" class="btn btn-bordered-white mt-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== Call To Action Area End ======-->
+
+    <!--====== Footer Area Start ======-->
+    <footer class="section footer-area">
+        <!-- Footer Top -->
+        <div class="footer-top ptb_100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Footer Title -->
+                            <h3 class="footer-title text-uppercase mb-2">About Us</h3>
+                            <ul>
+                                <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Partners</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Footer Title -->
+                            <h3 class="footer-title text-uppercase mb-2">Services</h3>
+                            <ul>
+                                <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Footer Title -->
+                            <h3 class="footer-title text-uppercase mb-2">Support</h3>
+                            <ul>
+                                <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <!-- Footer Items -->
+                        <div class="footer-items">
+                            <!-- Footer Title -->
+                            <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
+                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.
+                            </p>
+                            <!-- Social Icons -->
+                            <ul class="social-icons list-inline pt-2">
+                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a>
+                                </li>
+                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Copyright Area -->
+                        <div
+                            class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                            <!-- Copyright Left -->
+                            <div class="copyright-left">&copy; Copyrights {{date('Y')}} Distrimusic.
+                            </div>
+                            <!-- Copyright Right -->
+                            <div class="copyright-right">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) <span><?php
+                                                                                                                                                  $renderTime = microtime(true) - LARAVEL_START;
+                                                                                                                                                  echo "<p>Server rendering time: " . $renderTime . " seconds</p>";
+                                                                                                                                                  ?></span>  <span id="loadTime" ></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== Footer Area End ======-->
+
+    <!--====== Modal Search Area Start ======-->
+    <div id="search" class="modal fade p-0">
+        <div class="modal-dialog dialog-animated">
+            <div class="modal-content h-100">
+                <div class="modal-header" data-dismiss="modal">
+                    Search <i class="far fa-times-circle icon-close"></i>
+                </div>
+                <div class="modal-body">
+                    <form class="row">
+                        <div class="col-12 align-self-center">
+                            <div class="row">
+                                <div class="col-12 pb-3">
+                                    <h2 class="search-title mb-3">What are you looking for?</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus,
+                                        dapibus sed imperdiet consectetur.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 input-group">
+                                    <input type="text" class="form-control" placeholder="Enter your keywords">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 input-group align-self-center">
+                                    <button class="btn btn-bordered mt-3">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Modal Search Area End ======-->
+
+    <!--====== Modal Responsive Menu Area Start ======-->
+    <div id="menu" class="modal fade p-0">
+        <div class="modal-dialog dialog-animated">
+            <div class="modal-content h-100">
+                <div class="modal-header" data-dismiss="modal">
+                    Menu <i class="far fa-times-circle icon-close"></i>
+                </div>
+                <div class="menu modal-body">
+                    <div class="row w-100">
+                        <div class="items p-0 col-12 text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Modal Responsive Menu Area End ======-->
+</div>
+
+
+<!-- ***** All jQuery Plugins ***** -->
+
+<!-- jQuery(necessary for all JavaScript plugins) -->
+<script src="{{ URL::to('website/assets/js/jquery/jquery-3.5.1.min.js') }}"></script>
+
+<!-- Bootstrap js -->
+<script src="{{ URL::to('website/assets/js/bootstrap/popper.min.js') }}"></script>
+<script src="{{ URL::to('website/assets/js/bootstrap/bootstrap.min.js') }}"></script>
+
+<!-- Plugins js -->
+<script src="{{ URL::to('website/assets/js/plugins/plugins.min.js') }}"></script>
+
+<!-- Active js -->
+<script src="{{ URL::to('website/assets/js/active.js') }}"></script>
+</body>
+
 </html>
