@@ -4,12 +4,12 @@
 <div class="container-fluid"> <div class="row page-titles mx-0">
         <div class="col-sm-6 p-md-0">
             <div class="welcome-text">
-                <h4> @lang('crud.services.sent-messages')</h4>
+                <h4> @lang('crud.common.create')</h4>
             </div>
         </div>
         <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{url('sent-messages')}}">services</a></li>
+                <li class="breadcrumb-item"><a href="{{url('sent-messages')}}">messages</a></li>
                 <li class="breadcrumb-item active"><a href="javascript:void(0)">create</a></li>
             </ol>
         </div>
@@ -20,7 +20,7 @@
                 <a href="{{ route('sent-messages.index') }}" class="mr-4"
                     ><i class="icon ion-md-arrow-back"></i
                 ></a>
-                @lang('crud.compose_messages.create_title')
+                @lang('crud.common.back_')
             </h4>
 
             <x-form
