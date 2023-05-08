@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ThemesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
@@ -49,4 +50,5 @@ Route::prefix('/')
         Route::resource('messages', MessageController::class);
         Route::resource('sent-messages', SentMessageController::class);
         Route::resource('users', UserController::class);
+        Route::resource('themes', ThemesController::class);
     });

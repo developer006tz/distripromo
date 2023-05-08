@@ -73,7 +73,7 @@
             <template x-if="!imageUrl">
                 <div
                     class="border rounded border-gray-200 bg-gray-100"
-                    style="width: 100px; height: 100px;"
+                    style="width: 100px; height: 100px; border:1px solid red;"
                 ></div>
             </template>
 

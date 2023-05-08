@@ -1,14 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid"> <div class="row page-titles mx-0">
+        <div class="col-sm-6 p-md-0">
+            <div class="welcome-text">
+                <h4>@lang('crud.message_templates.edit_title')</h4>
+            </div>
+        </div>
+        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{url('messages')}}">messages</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">edit</a></li>
+            </ol>
+        </div>
+    </div>
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">
                 <a href="{{ route('messages.index') }}" class="mr-4"
                     ><i class="icon ion-md-arrow-back"></i
                 ></a>
-                @lang('crud.message_templates.edit_title')
+                back
             </h4>
 
             <x-form

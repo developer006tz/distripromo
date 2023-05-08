@@ -26,6 +26,7 @@ class OrderController extends Controller
             ->latest()
             ->paginate(5)
             ->withQueryString();
+            $test = str_replace();
 
         return view('app.orders.index', compact('orders', 'search'));
     }

@@ -1,7 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid"> <div class="row page-titles mx-0">
+        <div class="col-sm-6 p-md-0">
+            <div class="welcome-text">
+                <h4> @lang('crud.message_templates.index_title')</h4>
+            </div>
+        </div>
+        <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{url('messages')}}">messages</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">list</a></li>
+            </ol>
+        </div>
+    </div>
     <div class="searchbar mt-0 mb-4">
         <div class="row">
             <div class="col-md-6">
@@ -39,11 +51,11 @@
 
     <div class="card">
         <div class="card-body">
-            <div style="display: flex; justify-content: space-between;">
+            {{-- <div style="display: flex; justify-content: space-between;">
                 <h4 class="card-title">
-                    @lang('crud.message_templates.index_title')
+                   
                 </h4>
-            </div>
+            </div> --}}
 
             <div class="table-responsive">
                 <table class="table table-borderless table-hover">

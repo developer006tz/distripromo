@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Description -->
-    <meta name="description" content="">
-    <meta name="author" content="Themeland">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="keywords" content="Distripromo, Resell, Grow, Digital Panel,MMS panel,Distripromo MMS panel, Social Media Services, Online Marketplaces, Distripromo">
+    <meta name="author" content="Distripromo Company">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Distripromo offers the fastest, most affordable, and most advanced digital panel in the world. Earn a great income by reselling our high-quality social media services on your own platforms or on various online marketplaces. Distripromo is unbeatable in speed, price, and performance.">
+    <meta property="og:title" content="Distripromo - Resell and Grow (Advanced MMS panel)">
+    <meta property="og:description" content="The Fastest, Most Affordable, and Most Advanced Digital MMS Panel in the World. Earn a great income by reselling our high-quality social media services. Distripromo is unbeatable in speed, price, and performance.">
+    <meta name="format-detection" content="telephone=no">
 
     <!-- Title  -->
-    <title>Distrimusic | Home</title>
+    <title>Distripromo | Home</title>
     <script>
         const startTime = performance.now();
         window.addEventListener('load', () => {
@@ -22,7 +29,7 @@
     </script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="{{ URL::to('website/assets/img/favicon.png') }}">
+    <link rel="icon" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
 
     <!-- ***** All CSS Files ***** -->
 
@@ -37,7 +44,7 @@
 <body class="homepage-3">
 <!--====== Preloader Area Start ======-->
 <div id="preloader">
-    <!-- Distrimusic Preloader -->
+    <!-- Distripromo Preloader -->
     <div id="distrimusic-preloader" class="distrimusic-preloader">
         <!-- Preloader Animation -->
         <div class="preloader-animation">
@@ -51,11 +58,11 @@
                 <span data-text-preloader="T" class="animated-letters">T</span>
                 <span data-text-preloader="R" class="animated-letters">R</span>
                 <span data-text-preloader="I" class="animated-letters">I</span>
+                <span data-text-preloader="P" class="animated-letters">P</span>
+                <span data-text-preloader="R" class="animated-letters">R</span>
+                <span data-text-preloader="O" class="animated-letters">O</span>
                 <span data-text-preloader="M" class="animated-letters">M</span>
-                <span data-text-preloader="U" class="animated-letters">U</span>
-                <span data-text-preloader="S" class="animated-letters">S</span>
-                <span data-text-preloader="I" class="animated-letters">I</span>
-                <span data-text-preloader="C" class="animated-letters">C</span>
+                <span data-text-preloader="O" class="animated-letters">O</span>
             </div>
             <p class="fw-5 text-center text-uppercase">Loading...</p>
         </div>
@@ -120,7 +127,7 @@
                         <li class="nav-item">
                              <a class="nav-link scroll" href="#contact">Contact</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#faq">Faq</a>
                     </li>
@@ -168,9 +175,9 @@
                 <!-- Welcome Intro Start -->
                 <div class="col-12 col-md-6">
                     <div class="welcome-intro">
-                        <h1 class="text-white text-center text-md-left">Distrimusic <br> <span
+                        <h1 class="text-white text-center text-md-left">Distripromo <br> <span
                                 class="fw-4">Resell and Grow</span></h1>
-                        <p class="text-white text-center text-md-left my-4">The Fastest, Most Affordable, and Most Advanced Digital Panel in the World. We offer you a chance to earn a great income by reselling our high-quality social media services on your own platforms or on various online marketplaces. Distrimusic is simply unbeatable in speed, price, and performance..</p>
+                        <p class="text-white text-center text-md-left my-4">The Fastest, Most Affordable, and Most Advanced Digital Panel in the World. We offer you a chance to earn a great income by reselling our high-quality social media services on your own platforms or on various online marketplaces. Distripromo is simply unbeatable in speed, price, and performance..</p>
                         <!-- Buttons -->
                         <div
                             class="button-group d-flex align-items-center justify-content-center justify-content-md-start">
@@ -225,7 +232,7 @@
                         <!-- Promo Wrapper -->
                         <div class="promo-wrapper">
                             <h3 class="mb-3">Zero to Hero</h3>
-                            <p>If you want to be a <strong>successful social media marketer</strong>, you need Distrimusic. Distrimusic is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>high-quality services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget. Distrimusic is <strong>fast, affordable, and powerful</strong>. With Distrimusic, you can <strong>achieve your social media marketing goals</strong>. You can go from zero to hero in no time. Join Distrimusic today and start your <strong>journey to success</strong>.
+                            <p>If you want to be a <strong>successful social media marketer</strong>, you need Distripromo. Distripromo is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>high-quality services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget. Distripromo is <strong>fast, affordable, and powerful</strong>. With Distripromo, you can <strong>achieve your social media marketing goals</strong>. You can go from zero to hero in no time. Join Distripromo today and start your <strong>journey to success</strong>.
                             </p>
                         </div>
                     </div>
@@ -236,7 +243,7 @@
                         <!-- Promo Wrapper -->
                         <div class="promo-wrapper">
                             <h3 class="mb-3">Dedicated Support</h3>
-                            <p>Distrimusic is dedicated to giving you the <strong>best customer service ever</strong>. We want you to <strong>love our products and services</strong>. That’s why we have a friendly support team that is always ready to help you with any questions or issues. You can reach our support team by email, phone, or live chat. We are available Monday to Friday, 9 am to 5 pm GMT. We will reply to your inquiries within 24 hours or less. You can also visit our FAQ page for quick answers to common questions. We <strong>value your business</strong> and we can’t wait to serve you. Thank you for choosing Distrimusic as your <strong>social media marketing partner</strong>.
+                            <p>Distripromo is dedicated to giving you the <strong>best customer service ever</strong>. We want you to <strong>love our products and services</strong>. That’s why we have a friendly support team that is always ready to help you with any questions or issues. You can reach our support team by email, phone, or live chat. We are available Monday to Friday, 9 am to 5 pm GMT. We will reply to your inquiries within 24 hours or less. You can also visit our FAQ page for quick answers to common questions. We <strong>value your business</strong> and we can’t wait to serve you. Thank you for choosing Distripromo as your <strong>social media marketing partner</strong>.
                             </p>
                         </div>
                     </div>
@@ -247,15 +254,15 @@
                         <!-- Promo Wrapper -->
                         <div class="promo-wrapper">
                             <h3 class="mb-3">How it Works</h3>
-                            <p>Distrimusic is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>top-notch services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget.
+                            <p>Distripromo is the <strong>best social media marketing panel for resellers</strong>. You can resell our <strong>top-notch services</strong> on your own platforms or online marketplaces. Choose from followers, likes, views, comments, shares, and more. Customize your orders to fit your needs and budget.
 
-How to use Distrimusic:
+How to use Distripromo:
 
 Sign up for free with your email or Facebook/Google account.
 Add funds with PayPal, credit card, or cryptocurrency. Earn free credits by referring friends.
 Pick a service and place an order. Use smart filters to find the best options.
 Relax and wait for delivery. Track your order and contact support if needed.
-Join Distrimusic and <strong>make money from social media marketing</strong>.
+Join Distripromo and <strong>make money from social media marketing</strong>.
 
 
                             </p>
@@ -277,8 +284,8 @@ Join Distrimusic and <strong>make money from social media marketing</strong>.
                         <!-- Section Heading -->
                         <div class="section-heading text-center mb-3">
                             <h2>We help to grow your business.</h2>
-                            <p class="d-none d-sm-block mt-4">Grow your business with Distrimusic. Resell our top social media services. Boost your online presence and sales. Join us today.</p>
-                            <p class="d-block d-sm-none mt-4">Grow your business with Distrimusic. Resell our top social media services. Boost your online presence and sales. Join us today</p>
+                            <p class="d-none d-sm-block mt-4">Grow your business with Distripromo. Resell our top social media services. Boost your online presence and sales. Join us today.</p>
+                            <p class="d-block d-sm-none mt-4">Grow your business with Distripromo. Resell our top social media services. Boost your online presence and sales. Join us today</p>
                         </div>
                         <!-- Content List -->
                         <ul class="content-list text-left">
@@ -327,7 +334,7 @@ Join Distrimusic and <strong>make money from social media marketing</strong>.
                                         <span><b>Share</b><br>Spread your message and brand. Create viral effects and referrals.</span>
                                 </div>
                             </li>
-                            
+
                         </ul>
                         <a href="#" class="btn btn-bordered mt-4">Learn More</a>
                     </div>
@@ -738,7 +745,7 @@ Join Distrimusic and <strong>make money from social media marketing</strong>.
                             <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
                                 <span><i class="fas fa-envelope-open-text fa-3x"></i></span>
                                 <a class="d-none d-sm-block my-2" href="#">
-                                    <h3>info@distrimusic.com</h3>
+                                    <h3>info@distripromo.com</h3>
                                 </a>
                                 <a class="d-block d-sm-none my-2" href="#">
                                     <h3>mail@your company.com</h3>
@@ -896,7 +903,7 @@ Join Distrimusic and <strong>make money from social media marketing</strong>.
                         <div
                             class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
                             <!-- Copyright Left -->
-                            <div class="copyright-left">&copy; Copyrights {{date('Y')}} Distrimusic.
+                            <div class="copyright-left">&copy; Copyrights {{date('Y')}} Distripromo.
                             </div>
                             <!-- Copyright Right -->
                             <div class="copyright-right">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) <span><?php

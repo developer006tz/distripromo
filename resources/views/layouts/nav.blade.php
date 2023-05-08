@@ -46,79 +46,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Alfie Mason</span>
-                                        <p>Taherah left 7 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>AharlieKane</span>
-                                        <p>Sami is online</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Athan Jacoby</span>
-                                        <p>Nargis left 30 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="name-first-letter">B</li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Bashid Samim</span>
-                                        <p>Rashid left 50 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Breddie Ronan</span>
-                                        <p>Kalid is online</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Ceorge Carson</span>
-                                        <p>Taherah left 7 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
+                            
                             <li class="name-first-letter">D</li>
                             <li class="dz-chat-user">
                                 <div class="d-flex bd-highlight">
@@ -132,92 +60,9 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Denry Hunter</span>
-                                        <p>Nargis left 30 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
+                            
                             <li class="name-first-letter">J</li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Jack Ronan</span>
-                                        <p>Rashid left 50 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/1.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Jacob Tucker</span>
-                                        <p>Kalid is online</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/2.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>James Logan</span>
-                                        <p>Taherah left 7 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/3.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Joshua Weston</span>
-                                        <p>Sami is online</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="name-first-letter">O</li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/4.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Oliver Acker</span>
-                                        <p>Nargis left 30 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="dz-chat-user">
-                                <div class="d-flex bd-highlight">
-                                    <div class="img_cont">
-                                        <img src="images/avatar/5.jpg" class="rounded-circle user_img" alt="">
-                                        <span class="online_icon offline"></span>
-                                    </div>
-                                    <div class="user_info">
-                                        <span>Oscar Weston</span>
-                                        <p>Rashid left 50 mins ago</p>
-                                    </div>
-                                </div>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -690,10 +535,9 @@
                     </li>
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="#" role="button" data-toggle="dropdown">
-                            <img src="images/profile/pic1.jpg" width="20" alt="">
+                            <img src="{{asset('assets/images/avatar/1.png')}}" width="20" alt="">
                             <div class="header-info">
-                                <span>Johndoe</span>
-                                <small>Super Admin</small>
+                                <span>{{Auth::user()->name}}</span>
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -719,7 +563,7 @@
         </nav>
         <div class="sub-header">
             <div class="d-flex align-items-center flex-wrap mr-auto">
-                <h5 class="dashboard_bar">Dashboard</h5>
+                <h5 class="dashboard_bar">{{str_replace(['.index','.create','.edit','.show','-'],' ', Str::ucfirst(request()->route()->getName()))}}</h5>
             </div>
             <div class="d-flex align-items-center">
                 <a href="javascript:void(0);" class="btn btn-xs btn-primary light mr-1">Today</a>

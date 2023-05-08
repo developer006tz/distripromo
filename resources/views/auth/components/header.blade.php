@@ -12,11 +12,11 @@
 	<meta name="description" content="Distrimusic - Social media Marketing platform">
 	<meta property="og:title" content="Distrimusic - Social media Marketing platform">
 	<meta property="og:description" content="Distrimusic - Social media Marketing platform">
-	
+
 	<meta name="format-detection" content="telephone=no">
     <title>Distrimusic -  Social media Marketing platform </title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{URL::to('website/assets/img/logo/logo.png')}}">
 	<link href="{{ URL::to('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">
 
@@ -31,5 +31,5 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
 									<div class="text-center mb-3">
-										<img src="{{ URL::to('assets/images/logo-full.png') }}" alt="">
+										<img src="{{ URL::to('website/assets/img/logo/logo.png') }}" alt="">
 									</div>

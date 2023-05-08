@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="robots" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Jassa - Crypto Admin Dashboard">
-    <meta property="og:title" content="Jassa - Crypto Admin Dashboard">
-    <meta property="og:description" content="Jassa - Crypto Admin Dashboard">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="keywords" content="Distripromo, Resell, Grow, Digital Panel,MMS panel,Distripromo MMS panel, Social Media Services, Online Marketplaces, Distripromo">
+    <meta name="author" content="Distripromo Company">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Distripromo offers the fastest, most affordable, and most advanced digital panel in the world. Earn a great income by reselling our high-quality social media services on your own platforms or on various online marketplaces. Distripromo is unbeatable in speed, price, and performance.">
+    <meta property="og:title" content="Distripromo - Resell and Grow (Advanced MMS panel)">
+    <meta property="og:description" content="The Fastest, Most Affordable, and Most Advanced Digital MMS Panel in the World. Earn a great income by reselling our high-quality social media services. Distripromo is unbeatable in speed, price, and performance.">
     <meta name="format-detection" content="telephone=no">
-    <title>Jassa - Crypto Admin Dashboard </title>
+    <title>{{$title ?? '-'}}</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('assets/images/favicon.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
     <link rel="stylesheet" href="{{ URL::to('assets/vendor/chartist/css/chartist.min.css') }}">
     <link href="{{ URL::to('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link href="{{ URL::to('assets/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
     <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
+
 
 
 </head>
@@ -28,6 +33,10 @@
         </script>
 
 @livewireStyles
+{{--access the Site_theme Model record with id 1--}}
+@php
+    $theme = \App\Models\Site_theme::find(1);
+@endphp
 <body>
 
 <!--*******************
@@ -50,7 +59,7 @@
 
     <div class="footer">
         <div class="copyright">
-            <p>Copyright ©<a href="../index.html" target="_blank">Distrimusic</a> {{date('Y')}}</p>
+            <p>Copyright ©<a href="../index.html" target="_blank">Distripromo</a> {{date('Y')}}</p>
         </div>
     </div>
     <!--**********************************
@@ -63,6 +72,8 @@
 
 
 </div>
+
+
 <!--**********************************
     Main wrapper end
 ***********************************-->
@@ -70,6 +81,7 @@
 
 <!--**********************************
     Scripts
+    @stack('scripts')
 ***********************************-->
 <!-- Required vendors -->
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
@@ -91,9 +103,13 @@
 <script src="{{ URL::to('assets/js/custom.min.js') }}"></script>
 <script src="{{ URL::to('assets/js/deznav-init.js') }}"></script>
 <script src="{{ URL::to('assets/js/demo.js') }}"></script>
+<script>
+    window.themesStoreUrl = "{{ url('themes') }}";
+    window.themeVersion = "{{ $theme->version }}";
+</script>
 <script src="{{ URL::to('assets/js/styleSwitcher.js') }}"></script>
 
-@stack('scripts')
+
 
 </body>
 </html>
