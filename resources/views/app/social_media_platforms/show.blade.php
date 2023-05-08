@@ -4,7 +4,7 @@
 <div class="container-fluid"> <div class="row page-titles mx-0">
         <div class="col-sm-6 p-md-0">
             <div class="welcome-text">
-                <h4> View</h4>
+                <h4> @lang('crud.common.show')</h4>
             </div>
         </div>
         <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">

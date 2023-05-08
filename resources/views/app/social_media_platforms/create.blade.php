@@ -4,7 +4,7 @@
 <div class="container-fluid"> <div class="row page-titles mx-0">
         <div class="col-sm-6 p-md-0">
             <div class="welcome-text">
-                <h4> Create</h4>
+                <h4> @lang('crud.common.create')</h4>
             </div>
         </div>
         <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
@@ -22,7 +22,7 @@
                     class="mr-4"
                     ><i class="icon ion-md-arrow-back"></i
                 ></a>
-                @lang('crud.media_platforms.create_title')
+                @lang('crud.common.back_')
             </h4>
 
             <x-form
