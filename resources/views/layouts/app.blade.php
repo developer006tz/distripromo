@@ -16,40 +16,42 @@
     <meta property="og:description" content="The Fastest, Most Affordable, and Most Advanced Digital MMS Panel in the World. Earn a great income by reselling our high-quality social media services. Distripromo is unbeatable in speed, price, and performance.">
     <meta name="format-detection" content="telephone=no">
     <title>{{$title ?? '-'}}</title>
+    <script>
+        const startTime = performance.now();
+        window.addEventListener('load', () => {
+            const endTime = performance.now();
+            const renderingTimeInSeconds = (endTime - startTime) / 1000;
+            const loadTimeElement =  document.getElementById("loadTime");
+            loadTimeElement.textContent = `| Page : ${renderingTimeInSeconds.toFixed(2)} s `;
+        });
+    </script>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
-    <link rel="stylesheet" href="{{ URL::to('assets/vendor/chartist/css/chartist.min.css') }}">
-    <link href="{{ URL::to('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::to('assets/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
-    <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{asset('theme/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
+	<link href="{{asset('theme/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+	<link rel="stylesheet" href="{{asset('theme/vendor/nouislider/nouislider.min.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
-
-
-
-</head>
-<script type="module">
+	
+	<!-- Style css -->
+    <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
+    <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
-
-@livewireStyles
-{{--access the Site_theme Model record with id 1--}}
-@php
-    $theme = \App\Models\Site_theme::find(1);
-@endphp
+        
+        @livewireStyles
+        @stack('styles')
+</head>
 <body>
-
-<!--*******************
-    Preloader start
-********************-->
-<div id="preloader">
-    <div class="sk-three-bounce">
-        <div class="sk-child sk-bounce1"></div>
-        <div class="sk-child sk-bounce2"></div>
-        <div class="sk-child sk-bounce3"></div>
+     <!--*Preloader start*-->
+    <div id="preloader">
+		<div class="lds-ripple">
+			<div></div>
+			<div></div>
+		</div>
     </div>
-</div>
-<div id="main-wrapper">
+    <!--*Preloader end-->
+    <div id="main-wrapper">
     @include('layouts.nav-header')
     @include('layouts.nav')
     @include('layouts.sidebar')
@@ -59,57 +61,112 @@
 
     <div class="footer">
         <div class="copyright">
-            <p>Copyright ©<a href="../index.html" target="_blank">Distripromo</a> {{date('Y')}}</p>
+            {{-- <p>Copyright ©<a href="../index.html" target="_blank">Distripromo</a> {{date('Y')}}</p> --}}
+            
+            <p class="d-flex justify-content-center" style="color:1px solid rgb(111, 134, 134);" >&nbsp;&nbsp;<span id="loadtime2"></span>&nbsp;&nbsp;<span id="loadTime"></span>&nbsp;&nbsp;<span> | Server: {{microtime(true) - LARAVEL_START}} s</span>&nbsp;&nbsp;<span> | Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) </span></p>
         </div>
     </div>
-    <!--**********************************
-       Support ticket button start
-    ***********************************-->
-
-    <!--**********************************
-       Support ticket button end
-    ***********************************-->
 
 
 </div>
+@yield('modals')
+    <!-- Required vendors -->
+    <script src="{{asset('theme/vendor/global/global.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{asset('theme/js/dashboard/dashboard-1.js')}}"></script>
+    <script src="{{asset('theme/js/custom.min.js')}}"></script>
+    <script src="{{asset('theme/js/dlabnav-init.js')}}"></script>
+    <script src="{{asset('theme/js/demo.js')}}"></script>
+    <script src="{{asset('theme/js/styleSwitcher.js')}}"></script>
+    <!-- Chart piety plugin files -->
+    <script src="{{asset('vendor/peity/jquery.peity.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/owl-carousel/owl.carousel.js')}}"></script>
+    <script src="{{asset('theme/vendor/nouislider/nouislider.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/wnumb/wNumb.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/nouislider-init.js')}}"></script>
+    
 
+    <script src="{{asset('theme/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/promise-polyfill/polyfill.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('theme/vendor/promise-polyfill/polyfill.min.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/sweetalert.init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/toastr-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/jquery.sparkline-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/select2-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/summernote-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/data-table-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/bs-datetimepicker-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/jquery.maskedinput-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/jquery.validate-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-pickers-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-repeater-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-fileupload-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-inputmask-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-select2-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-editor-summernote-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/jquery-steps-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/bs-stepper-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/jquery.validate-init.js')}}"></script>
+    <script src="{{asset('theme/js/plugins-init/form-repeater-init.js')}}"></script>
+    <script>
+		function cardsCenter()
+		{
+			
+			/*  testimonial one function by = owl.carousel.js */
+			
+	
+			
+			jQuery('.card-slider').owlCarousel({
+				loop:true,
+				margin:0,
+				nav:true,
+				//center:true,
+				slideSpeed: 3000,
+				paginationSpeed: 3000,
+				dots: true,
+				navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+				responsive:{
+					0:{
+						items:1
+					},
+					576:{
+						items:1
+					},	
+					800:{
+						items:1
+					},			
+					991:{
+						items:1
+					},
+					1200:{
+						items:1
+					},
+					1600:{
+						items:1
+					}
+				}
+			})
+		}
+		
+		jQuery(window).on('load',function(){
+			setTimeout(function(){
+				cardsCenter();
+			}, 1000); 
+		});
+		
+	</script>
 
-<!--**********************************
-    Main wrapper end
-***********************************-->
-@stack('modals')
-
-<!--**********************************
-    Scripts
-    @stack('scripts')
-***********************************-->
-<!-- Required vendors -->
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-
-</script><script src="{{ URL::to('assets/vendor/global/global.min.js') }}"></script>
-<script src="{{ URL::to('assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-<script src="{{ URL::to('assets/vendor/chart.js/Chart.bundle.min.js') }}"></script>
-
-<!-- Chart piety plugin files -->
-<script src="{{ URL::to('assets/vendor/peity/jquery.peity.min.js') }}"></script>
-
-<!-- Apex Chart -->
-<script src="{{ URL::to('assets/vendor/apexchart/apexchart.js') }}"></script>
-
-<!-- Dashboard 1 -->
-<script src="{{ URL::to('assets/js/dashboard/dashboard-1.js') }}"></script>
-
-<script src="{{ URL::to('assets/vendor/owl-carousel/owl.carousel.js') }}"></script>
-<script src="{{ URL::to('assets/js/custom.min.js') }}"></script>
-<script src="{{ URL::to('assets/js/deznav-init.js') }}"></script>
-<script src="{{ URL::to('assets/js/demo.js') }}"></script>
-<script>
-    window.themesStoreUrl = "{{ url('themes') }}";
-    window.themeVersion = "{{ $theme->version }}";
-</script>
-<script src="{{ URL::to('assets/js/styleSwitcher.js') }}"></script>
-
+    <script>
+        $(document).ready(function(){
+            $('#loadtime2').html('Dom: ' + (window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart)/1000 + ' s ');
+        });
+    </script>
+    @yield('scripts')
 
 
 </body>
 </html>
+	
