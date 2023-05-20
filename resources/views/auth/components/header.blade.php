@@ -31,5 +31,5 @@
                             <div class="col-xl-12">
                                 <div class="auth-form">
 									<div class="text-center mb-3">
-										<img src="{{ URL::to('website/assets/img/logo/logo-blue.png') }}" alt="">
+										<img src="{{ URL::to('website/assets/img/logo/logo-blue.png') }}" width="66" height="66" alt="">
 									</div>
