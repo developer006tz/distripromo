@@ -35,11 +35,11 @@
 	
 	<!-- Style css -->
     <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
-    <script type="module">
+    {{-- <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
         
-        @livewireStyles
+        @livewireStyles --}}
         @stack('styles')
 </head>
 <body>
@@ -70,9 +70,9 @@
 
 </div>
 @yield('modals')
- @livewireScripts
+ {{-- @livewireScripts
         
-        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
 
     <!-- Required vendors -->
     <script src="{{asset('theme/vendor/global/global.min.js')}}"></script>
