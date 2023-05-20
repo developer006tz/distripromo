@@ -17,8 +17,8 @@
     <title>Distrimusic -  Social media Marketing platform </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{URL::to('website/assets/img/logo/logo-blue.png')}}">
-	<link href="{{ URL::to('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::to('assets/css/style.css') }}" rel="stylesheet">
+	<link href="{{ URL::to('theme/assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::to('theme/assets/css/style.css') }}" rel="stylesheet">
 
 </head>
 <body class="vh-100">

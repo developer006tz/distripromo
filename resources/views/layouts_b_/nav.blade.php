@@ -554,7 +554,7 @@
                                 <span class="ml-2">{{ __('Logout') }} </span>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
-                                </form>
+                                </form>jj
                             </a>
                         </div>
                     </li>
