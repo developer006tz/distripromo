@@ -11,7 +11,7 @@
 	<title>Service Unavailable</title>
 	
 	<!-- FAVICONS ICON -->
-	 <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
+	 <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
     <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
     
 </head>

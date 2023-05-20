@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>{{$title ?? '-'}}</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
     <link rel="stylesheet" href="{{ URL::to('assets/vendor/chartist/css/chartist.min.css') }}">
     <link href="{{ URL::to('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link href="{{ URL::to('assets/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet">

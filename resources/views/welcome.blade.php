@@ -19,11 +19,11 @@
     <meta property="og:type" content="Instagram">
     <meta property="og:title" content="Distrimusic">
     <meta property="og:description" content="Distripromo, Resell, Grow, Digital Panel,MMS panel,Distripromo MMS panel, Social Media Services, Online Marketplaces, Distripromo.">
-    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
     <meta name="theme-color" content="#000000">
     <meta property="og:type" content="website"> 
     <meta property="og:url" content="https://distripromo.com/">
-    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@distripromo">
      
@@ -41,7 +41,7 @@
     </script>
 
     <!-- Favicon  -->
-    <link rel="icon" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <link rel="icon" href="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
 
     <!-- ***** All CSS Files ***** -->
 
@@ -117,8 +117,8 @@
             <div class="container header">
                 <!-- Navbar Brand-->
                 <a class="navbar-brand" href="index.html">
-                    <img class="navbar-brand-regular" width="43" height="52" src="{{ URL::to('website/assets/img/logo/logo-white.png') }}" alt="brand-logo">
-                    <img class="navbar-brand-sticky" width="43" height="52" src="{{ URL::to('website/assets/img/logo/logo.png') }}" alt="sticky brand-logo">
+                    <img class="navbar-brand-regular" width="43" height="52" src="{{ URL::to('website/assets/img/logo/distri-logo-white.png') }}" alt="brand-logo">
+                    <img class="navbar-brand-sticky" width="43" height="52" src="{{ URL::to('website/assets/img/logo/logo-blue.png') }}" alt="sticky brand-logo">
                 </a>
                 <div class="ml-auto"></div>
                 <!-- Navbar -->
