@@ -1,4 +1,4 @@
-@include('auth_.components.header')
+@include('auth.components.header')
 <h4 class="text-center mb-4">{{ __('Register') }}</h4>
 <form method="POST" action="{{ route('register') }}">
     @csrf
@@ -56,4 +56,4 @@
     <p>Already have an account? <a class="text-primary" href="{{ route('login') }}">Log in</a></p>
 </div>
 
-@extends('auth_.components.footer')
+@extends('auth.components.footer')
