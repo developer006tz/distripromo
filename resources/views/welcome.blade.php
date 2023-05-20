@@ -15,9 +15,21 @@
     <meta property="og:title" content="Distripromo - Resell and Grow (Advanced MMS panel)">
     <meta property="og:description" content="The Fastest, Most Affordable, and Most Advanced Digital MMS Panel in the World. Earn a great income by reselling our high-quality social media services. Distripromo is unbeatable in speed, price, and performance.">
     <meta name="format-detection" content="telephone=no">
+    <meta property="og:url" content="https://www.instagram.com/distrimusic/">
+    <meta property="og:type" content="Instagram">
+    <meta property="og:title" content="Distrimusic">
+    <meta property="og:description" content="Distripromo, Resell, Grow, Digital Panel,MMS panel,Distripromo MMS panel, Social Media Services, Online Marketplaces, Distripromo.">
+    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://distripromo.com/">
+    <meta property="og:image" content="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@distripromo">
+     
 
     <!-- Title  -->
-    <title>Distripromo | Home</title>
+    <title>Distripromo</title>
     <script>
         const startTime = performance.now();
         window.addEventListener('load', () => {
@@ -128,22 +140,22 @@
                              <a class="nav-link scroll" href="#contact">Contact</a>
                     </li>
 
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link scroll" href="#faq">Faq</a>
-                    </li>
+                    </li> --}}
                 </ul>
                 <!-- Navbar Icons -->
                 <ul class="navbar-nav icons">
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
                             <i class="fas fa-search"></i>
                         </a>
+                    </li> --}}
+                    <li class="nav-item social">
+                        <a href="https://wa.link/p17jaq" class="nav-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </li>
                     <li class="nav-item social">
-                        <a href="#" class="nav-link"><i class="fab fa-whatsapp"></i></a>
-                    </li>
-                    <li class="nav-item social">
-                        <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/distrimusic/" class="nav-link" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
 
@@ -464,12 +476,10 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                 <div class="col-12 col-md-10 col-lg-7">
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
-                        <h2>We provide the best digital services</h2>
-                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        <h2>We provide the best SMM services</h2>
+                        <p class="d-none d-sm-block mt-4">Distripromo: Awesome and Robust Digital Services for Your Online Success. join Us Today.
                         </p>
-                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati.</p>
+                        <p class="d-block d-sm-none mt-4">Distripromo: Awesome and Robust Digital Services for Your Online Success. join Us Today.</p>
                     </div>
                 </div>
             </div>
@@ -478,9 +488,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-rocket-launch color-1 icon-bg-1"></span>
-                        <h3 class="my-3">Data Analytics</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Social media advertising</h3>
+                        <p><b>Want to reach more customers online?</b> Social media advertising is the answer. We create and run ads on Facebook, Instagram, Youtube, and Tiktok that attract and convert your ideal audience. Contact us today and let’s grow your business with social media ads.</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -488,9 +497,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-monitoring color-2 icon-bg-2"></span>
-                        <h3 class="my-3">Website Growth</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Music promotions</h3>
+                        <p>Are you a musician, singer, rapper, or producer who wants to get more exposure and recognition for your music? If yes, then you need our music promotions service. We can help you promote your music on platforms like Boomplay, Spotify, Apple music, SoundCloud and YouTube. We can get you more streams, plays, views, followers, and fans. .</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -498,9 +506,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-web color-3 icon-bg-3"></span>
-                        <h3 class="my-3">Seo Ranking</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Social Media Accounts Management</h3>
+                        <p>Do you want to have a strong and consistent social media presence without spending hours on creating and posting content? If yes, then you need our social media accounts management service. We can handle your social media accounts on Facebook, Instagram, Twitter, Youtube, and Tiktok. We can create and post engaging content, respond to comments and messages, and grow your followers and fans.</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -508,9 +515,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-smartphone color-4 icon-bg-4"></span>
-                        <h3 class="my-3">App Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Sponsorship Made Easy for Underground Artists</h3>
+                        <p>Are you an underground artist who wants to make money from your passion? Do you need sponsors to support your music, art, or performance? If yes, then you need our artist sponsorship finding service. We can help you find and connect with sponsors who are interested in your work. We can also help you negotiate the best deals and contracts. Contact us today and let us help you get paid to do what you love..</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -518,9 +524,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-email color-5 icon-bg-5"></span>
-                        <h3 class="my-3">Email Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Social Account Boosting</h3>
+                        <p>Do you want to grow your social media accounts quickly and easily? Do you want to have more followers and fans who love your content and support your brand? If yes, then you need our social account boosting service. We can help you boost your social media accounts on platforms like Instagram, Twitter, TikTok, and YouTube. We can get you more real and active followers and fans who will engage with your posts and videos.</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -528,9 +533,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Single Service -->
                     <div class="single-service text-center p-4">
                         <span class="flaticon-affiliate color-6 icon-bg-6"></span>
-                        <h3 class="my-3">Affiliate Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
-                            incididunt emit.</p>
+                        <h3 class="my-3">Social Media Content Creation & Graphics Design</h3>
+                        <p>Do you want to create content that attracts and engages your social media audience? If yes, then you need our social media content creation service. We can create high-quality and engaging content for your social media accounts, such as images, videos, graphics, captions, hashtags, and more. Contact us today and let us captivate your audience with amazing conten.</p>
                         <a class="service-btn mt-3" href="#">Learn More</a>
                     </div>
                 </div>
@@ -547,77 +551,136 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Section Heading -->
                     <div class="section-heading text-center">
                         <h2>Our Price Plans</h2>
-                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        <p class="d-none d-sm-block mt-4">We offer the price plans to suit your needs and budget. Compare the features and benefits of each plan and pick the best one for you.
                         </p>
-                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati.</p>
+                        <p class="d-block d-sm-none mt-4">We offer the price plans to suit your needs and budget. Compare the features and benefits of each plan and pick the best one for you.</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-12">
                     <div class="row price-plan-wrapper">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-3">
                             <!-- Single Price Plan -->
                             <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
-                                <!-- Plan Title -->
                                 <div class="plan-title mb-2 mb-sm-3">
-                                    <h3 class="mb-2">Basic</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>
+                                    <h3 class="mb-2">Instagram Followers</h3>
                                 </div>
-                                <!-- Plan Price -->
-                                <div class="plan-price pb-2 pb-sm-3">
-                                    <span class="color-primary fw-7">$</span>
-                                    <span class="h1 fw-7">49</span>
-                                    <sub class="validity text-muted fw-5">/mo</sub>
-                                </div>
-                                <!-- Plan Description -->
                                 <div class="plan-description">
                                     <ul class="plan-features">
-                                        <li class="py-2">5GB Linux Web Space</li>
-                                        <li class="py-2">5 MySQL Databases</li>
-                                        <li class="py-2 text-muted">24/7 Tech Support</li>
-                                        <li class="py-2 text-muted">Daily Backups</li>
+                                        <li class="py-2">1000 = Tsh 3000</li>
+                                        <li class="py-2">5000 = Tsh 15,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 30,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 30,000</li>
                                     </ul>
                                 </div>
                                 <!-- Plan Button -->
-                                <div class="plan-button">
-                                    <a href="#" class="btn btn-bordered mt-3">Get Started</a>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 mt-4 mt-md-0">
-                            <!-- Single Price Plan -->
-                            <div class="single-price-plan color-2 bg-hover active hover-top text-center p-5">
-                                <!-- Plan Title -->
+                            {{-- instragram likes  --}}
+                            <div class="col-12 col-md-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
                                 <div class="plan-title mb-2 mb-sm-3">
-                                    <h3 class="mb-2">Pro <sup><span
-                                                class="badge badge-pill badge-warning ml-2">Recommended</span></sup>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, nemo.</p>
+                                    <h3 class="mb-2">Instagram Likes</h3>
                                 </div>
-                                <!-- Plan Price -->
-                                <div class="plan-price pb-2 pb-sm-3">
-                                    <span class="color-primary fw-7">$</span>
-                                    <span class="h1 fw-7">129</span>
-                                    <sub class="validity text-muted fw-5">/mo</sub>
-                                </div>
-                                <!-- Plan Description -->
                                 <div class="plan-description">
                                     <ul class="plan-features">
-                                        <li class="py-2">10GB Linux Web Space</li>
-                                        <li class="py-2">50 MySQL Databases</li>
-                                        <li class="py-2">Unlimited Email</li>
-                                        <li class="py-2">Daily Backups</li>
+                                        <li class="py-2">1000 = Tsh 2000</li>
+                                        <li class="py-2">5000 = Tsh 10,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 20,000</li>
+                                        <li class="py-2 text-muted">50k = Tsh 100,000</li>
                                     </ul>
                                 </div>
-                                <!-- Plan Button -->
-                                <div class="plan-button">
-                                    <a href="#" class="btn btn-bordered active mt-3">Get Started</a>
-                                </div>
+                                
                             </div>
                         </div>
+                            {{-- Tiktok followers  --}}
+                            <div class="col-12 col-md-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Tiktok Followers</h3>
+                                </div>
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">1000 = Tsh 5,000</li>
+                                        <li class="py-2">5000 = Tsh 25,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 50,000</li>
+                                        <li class="py-2 text-muted">100k = Tsh 500,000</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                            {{-- Tiktok Viewers  --}}
+                            <div class="col-12 col-md-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Tiktok Viewers</h3>
+                                </div>
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">1000 = Tsh 2,000</li>
+                                        <li class="py-2">5000 = Tsh 10,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 20,000</li>
+                                        <li class="py-2 text-muted">50k = Tsh 100,000</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        {{-- Youtube Subscribers  --}}
+                            <div class="col-12 col-md-4 mt-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Youtube Subscribers</h3>
+                                </div>
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">1000 = Tsh 35,000</li>
+                                        <li class="py-2">5000 = Tsh 174,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 349,500</li>
+                                        <li class="py-2 text-muted">50k = Tsh 1,750,000</li>
+                                        <li class="py-2 text-muted">100k = Tsh 3,405,000</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        {{-- Youtube Subscribers  --}}
+                            <div class="col-12 col-md-4 mt-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2">Youtube Viewers</h3>
+                                </div>
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">1000 = Tsh 5,000</li>
+                                        <li class="py-2">5000 = Tsh 25,000</li>
+                                        <li class="py-2 text-muted">10k = Tsh 50,000</li>
+                                        <li class="py-2 text-muted">50k = Tsh 250,000</li>
+                                        <li class="py-2 text-muted">100k = Tsh 405,000</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        {{-- Youtube watch hours  --}}
+                            <div class="col-12 col-md-4 mt-3">
+                            <div class="single-price-plan color-1 bg-hover hover-top text-center p-5">
+                                <div class="plan-title mb-2 mb-sm-3">
+                                    <h3 class="mb-2 h3">Youtube Watch hours</h3>
+                                </div>
+                                <div class="plan-description">
+                                    <ul class="plan-features">
+                                        <li class="py-2">1000 = Tsh 36,000</li>
+                                        <li class="py-2">4000 = Tsh 124,000</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -630,90 +693,6 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
     <!-- ***** Price Plan Area End ***** -->
 
     <!-- ***** Review Area Start ***** -->
-    <section id="review" class="section review-area bg-overlay ptb_100">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-lg-4">
-                    <!-- Section Heading -->
-                    <div class="section-heading m-0">
-                        <h2 class="text-white">Customers loves us</h2>
-                        <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
-                            asperiores sit.</p>
-                        <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Laborum obcaecati.</p>
-                        <a href="#" class="btn btn-bordered-white mt-4">Work with Us</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="row mt-5 mt-lg-0">
-                        <div class="col-12 col-md-6 res-margin">
-                            <!-- Single Review -->
-                            <div class="single-review bg-inherit p-5">
-                                <!-- Review Content -->
-                                <div class="review-content">
-                                    <!-- Review Text -->
-                                    <div class="review-text">
-                                        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab
-                                            nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>
-                                    </div>
-                                    <!-- Quotation Icon -->
-                                    <div class="quot-icon">
-                                        <img class="avatar-sm" src="{{ URL::to('website/assets/img/quote.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Reviewer -->
-                                <div class="reviewer media mt-3">
-                                    <!-- Reviewer Thumb -->
-                                    <div class="reviewer-thumb">
-                                        <img class="avatar-lg radius-100" src="{{ URL::to('website/assets/img/avatar/avatar-1.png') }}"
-                                             alt="">
-                                    </div>
-                                    <!-- Reviewer Media -->
-                                    <div class="reviewer-meta media-body align-self-center ml-4">
-                                        <h5 class="reviewer-name text-white mb-2">Junaid Hasan</h5>
-                                        <h6 class="text-white-50 fw-6">CEO, Themeland</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <!-- Single Review -->
-                            <div class="single-review bg-inherit p-5">
-                                <!-- Review Content -->
-                                <div class="review-content">
-                                    <!-- Review Text -->
-                                    <div class="review-text">
-                                        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                            elit. Ipsam est modi amet error earum aperiam, fuga labore facere rem ab
-                                            nemo possimus cum excepturi expedita. Culpa rerum, quaerat qui non.</p>
-                                    </div>
-                                    <!-- Quotation Icon -->
-                                    <div class="quot-icon">
-                                        <img class="avatar-sm" src="{{ URL::to('website/assets/img/quote.png') }}" alt="">
-                                    </div>
-                                </div>
-                                <!-- Reviewer -->
-                                <div class="reviewer media mt-3">
-                                    <!-- Reviewer Thumb -->
-                                    <div class="reviewer-thumb">
-                                        <img class="avatar-lg radius-100" src="{{ URL::to('website/assets/img/avatar/avatar-2.png') }}"
-                                             alt="">
-                                    </div>
-                                    <!-- Reviewer Media -->
-                                    <div class="reviewer-meta media-body align-self-center ml-4">
-                                        <h5 class="reviewer-name text-white mb-2">Yasmin Akter</h5>
-                                        <h6 class="text-white-50 fw-6">Designer, Themeland</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- ***** Review Area End ***** -->
 
     <!--====== Contact Area Start ======-->
@@ -724,11 +703,9 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Section Heading -->
                     <div class="section-heading text-center mb-3">
                         <h2>Let's connect!</h2>
-                        <p class="d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
+                        <p class="d-none d-sm-block mt-4">We’d love to hear from you and answer any questions you have about Distripromo, the digital dashboard for social media marketing.
                         </p>
-                        <p class="d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Laborum obcaecati.</p>
+                        <p class="d-block d-sm-none mt-4">We’d love to hear from you and answer any questions you have about Distripromo, the digital dashboard for social media marketing.</p>
                     </div>
                     <!-- Contact Us -->
                     <div class="contact-us">
@@ -736,10 +713,10 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                             <!-- Contact Info -->
                             <li class="contact-info color-1 bg-hover active hover-bottom text-center p-5 m-3">
                                 <span><i class="fas fa-mobile-alt fa-3x"></i></span>
-                                <a class="d-block my-2" href="#">
-                                    <h3>+255 746 828 843</h3>
+                                <a class="d-block my-2" href="tel:+255679420201">
+                                    <h3>+255 679 420 201</h3>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>Call or sms us with our phone number.</p>
                             </li>
                             <!-- Contact Info -->
                             <li class="contact-info color-3 bg-hover active hover-bottom text-center p-5 m-3">
@@ -750,7 +727,7 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                                 <a class="d-block d-sm-none my-2" href="#">
                                     <h3>mail@your company.com</h3>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <p>contact us with our email and we will respond quickly.</p>
                             </li>
                         </ul>
                     </div>
@@ -759,7 +736,7 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                     <!-- Contact Box -->
                     <div class="contact-box text-center">
                         <!-- Contact Form -->
-                        <form id="contact-form" method="POST" action="assets/php/mail.php">
+                        <form id="contact-form" method="POST" action="{{route('login')}}">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
@@ -807,13 +784,9 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                 <div class="col-12 col-lg-10">
                     <!-- Section Heading -->
                     <div class="section-heading text-center m-0">
-                        <h2 class="text-white">Looking for the best digital agency &amp; marketing solution?</h2>
-                        <p class="text-white d-none d-sm-block mt-4">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti
-                            asperiores sit.</p>
-                        <p class="text-white d-block d-sm-none mt-4">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Laborum obcaecati.</p>
-                        <a href="#" class="btn btn-bordered-white mt-4">Contact Us</a>
+                        <h2 class="text-white">Wanna Boost Your Brand with the Best SMM Services &amp; marketing solution?</h2>
+                        
+                        <a href="{{route('register')}}" class="btn btn-bordered-white mt-4">Start working with us Today</a>
                     </div>
                 </div>
             </div>
@@ -834,10 +807,8 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                             <h3 class="footer-title text-uppercase mb-2">About Us</h3>
                             <ul>
                                 <li class="py-2"><a class="text-black-50" href="#">Company Profile</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">Testimonials</a></li>
                                 <li class="py-2"><a class="text-black-50" href="#">Careers</a></li>
                                 <li class="py-2"><a class="text-black-50" href="#">Partners</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">Affiliate Program</a></li>
                             </ul>
                         </div>
                     </div>
@@ -847,10 +818,10 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                             <!-- Footer Title -->
                             <h3 class="footer-title text-uppercase mb-2">Services</h3>
                             <ul>
-                                <li class="py-2"><a class="text-black-50" href="#">Web Application</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">Product Management</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">User Interaction Design</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">UX Consultant</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Music prommotion</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">social media advertisement</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Social Account Boost & grow</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Graphics design</a></li>
                                 <li class="py-2"><a class="text-black-50" href="#">Social Media Marketing</a></li>
                             </ul>
                         </div>
@@ -864,8 +835,7 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                                 <li class="py-2"><a class="text-black-50" href="#">Frequently Asked</a></li>
                                 <li class="py-2"><a class="text-black-50" href="#">Terms &amp; Conditions</a></li>
                                 <li class="py-2"><a class="text-black-50" href="#">Privacy Policy</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">Help Center</a></li>
-                                <li class="py-2"><a class="text-black-50" href="#">Contact Us</a></li>
+                                <li class="py-2"><a class="text-black-50" href="#">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -874,19 +844,13 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                         <div class="footer-items">
                             <!-- Footer Title -->
                             <h3 class="footer-title text-uppercase mb-2">Follow Us</h3>
-                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae.
+                            <p class="mb-2">Follow us in our social media.
                             </p>
                             <!-- Social Icons -->
                             <ul class="social-icons list-inline pt-2">
-                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-facebook"></i></a>
+                                <li class="list-inline-item px-1"><a href="https://wa.link/p17jaq" target="_blanck"><i class="fab fa-whatsapp"></i></a>
                                 </li>
-                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-google-plus"></i></a>
-                                </li>
-                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li class="list-inline-item px-1"><a href="#"><i class="fab fa-instagram"></i></a>
+                                <li class="list-inline-item px-1"><a href="https://www.instagram.com/distrimusic/" target="_blanck"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -906,10 +870,7 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                             <div class="copyright-left">&copy; Copyrights {{date('Y')}} Distripromo.
                             </div>
                             <!-- Copyright Right -->
-                            <div class="copyright-right">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) <span><?php
-                                                                                                                                                  $renderTime = microtime(true) - LARAVEL_START;
-                                                                                                                                                  echo "<p>Server rendering time: " . $renderTime . " seconds</p>";
-                                                                                                                                                  ?></span>  <span id="loadTime" ></span> </div>
+                            <div class="copyright-right"><span>All right reserved</span></div>
                         </div>
                     </div>
                 </div>
@@ -931,8 +892,7 @@ Join Distripromo and <strong>make money from social media marketing</strong>.
                             <div class="row">
                                 <div class="col-12 pb-3">
                                     <h2 class="search-title mb-3">What are you looking for?</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam lacus,
-                                        dapibus sed imperdiet consectetur.</p>
+                                    <p>Find anything about distripromo.</p>
                                 </div>
                             </div>
                             <div class="row">
