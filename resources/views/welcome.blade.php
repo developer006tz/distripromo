@@ -195,7 +195,7 @@
                             class="button-group d-flex align-items-center justify-content-center justify-content-md-start">
                             <a href="{{url('login')}}" class="btn btn-bordered-white">Start a Project</a>
                             <!-- Play Button -->
-                            <a class="play-btn" data-fancybox data-width="640" data-height="360"
+                            {{-- <a class="play-btn" data-fancybox data-width="640" data-height="360"
                                data-small-btn="true" href="https://youtu.be/TKnufs85hXk">
                                 <div class="btn-circle play-animation"></div>
                                 <div class="btn-circle play-animation animation-short"></div>
@@ -203,7 +203,7 @@
                                 <div class="play-icon">
                                     <i class="fas fa-play"></i>
                                 </div>
-                            </a>
+                            </a> --}}
                         </div>
                     </div>
                 </div>

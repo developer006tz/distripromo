@@ -27,20 +27,21 @@
     </script>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.svg') }}">
+    
     <link href="{{asset('theme/assets/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link href="{{asset('theme/assets/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 	<link rel="stylesheet" href="{{asset('theme/assets/vendor/nouislider/nouislider.min.css')}}">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- Style css -->
+    <link href="{{asset('theme/assets/css/style.css')}}" rel="stylesheet">
     <script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
 	
-	<!-- Style css -->
-    <link href="{{asset('theme/assets/css/style.css')}}" rel="stylesheet">
-    {{-- <script type="module">
+	
+    <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
         
-        @livewireStyles --}}
+        @livewireStyles
         @stack('styles')
 </head>
 <body>
@@ -70,10 +71,10 @@
 
 
 </div>
-@yield('modals')
- {{-- @livewireScripts
+@stack('modals')
+ @livewireScripts
         
-        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
+        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
 
     <!-- Required vendors -->
     <script src="{{asset('theme/assets/vendor/global/global.min.js')}}"></script>
@@ -96,7 +97,7 @@
     <script src="{{asset('theme/assets/js/plugins-init/nouislider-init.js')}}"></script>
     
 
-    <script src="{{asset('theme/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    {{-- <script src="{{asset('theme/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendor/promise-polyfill/polyfill.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendor/promise-polyfill/polyfill.min.js')}}"></script>
@@ -118,7 +119,7 @@
     <script src="{{asset('theme/assets/js/plugins-init/jquery-steps-init.js')}}"></script>
     <script src="{{asset('theme/assets/js/plugins-init/bs-stepper-init.js')}}"></script>
     <script src="{{asset('theme/assets/js/plugins-init/jquery.validate-init.js')}}"></script>
-    <script src="{{asset('theme/assets/js/plugins-init/form-repeater-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-repeater-init.js')}}"></script> --}}
     <script>
 		function cardsCenter()
 		{
