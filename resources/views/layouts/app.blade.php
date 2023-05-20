@@ -28,6 +28,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.svg') }}">
     <link href="{{asset('theme/assets/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
+     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 	<link href="{{asset('theme/assets/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 	<link rel="stylesheet" href="{{asset('theme/assets/vendor/nouislider/nouislider.min.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -82,7 +83,10 @@
     <script src="{{asset('theme/assets/js/custom.min.js')}}"></script>
     <script src="{{asset('theme/assets/js/dlabnav-init.js')}}"></script>
     <script src="{{asset('theme/assets/js/demo.js')}}"></script>
+    {{-- <script src="{{asset('theme/assets/vendor/global/global.min.js')}}"></script> --}}
+    @if(Auth::user()->hasRole('super-admin'))
     <script src="{{asset('theme/assets/js/styleSwitcher.js')}}"></script>
+    @endif
     <!-- Chart piety plugin files -->
     <script src="{{asset('vendor/peity/jquery.peity.min.js')}}"></script>
     <script src="{{asset('theme/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>

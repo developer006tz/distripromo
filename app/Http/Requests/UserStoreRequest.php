@@ -21,7 +21,7 @@ class UserStoreRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'role' => ['nullable', 'in:client,wakala,admin,super_admin'],
+            // 'role' => ['nullable', 'in:client,wakala,admin,super_admin'],
             'name' => ['required', 'max:255', 'string'],
             'email' => ['required', 'unique:users,email', 'email'],
             'image' => ['nullable', 'image', 'max:1024'],

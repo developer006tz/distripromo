@@ -91,7 +91,7 @@
                                             type="button"
                                             class="btn btn-light"
                                         >
-                                            <i class="icon ion-md-eye"></i>
+                                            <i class="fas fa-eye"></i>
                                         </button>
                                     </a>
                                     @endcan @can('delete', $socialMediaPlatform)

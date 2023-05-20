@@ -60,7 +60,7 @@
                     <tbody>
                         @forelse($users as $user)
                         <tr>
-                            <td>{{ $user->role ?? '-' }}</td>
+                            <td>{{ $user->getRoleNames()[0] ?? '-' }}</td>
                             <td>{{ $user->name ?? '-' }}</td>
                             <td>{{ $user->email ?? '-' }}</td>
                             <td>
@@ -90,7 +90,7 @@
                                             type="button"
                                             class="btn btn-light"
                                         >
-                                            <i class="icon ion-md-eye"></i>
+                                            <i class="fas fa-eye"></i>
                                         </button>
                                     </a>
                                     @endcan @can('delete', $user)

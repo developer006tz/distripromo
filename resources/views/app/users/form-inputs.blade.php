@@ -1,7 +1,7 @@
 @php $editing = isset($user) @endphp
 
 <div class="row">
-    <x-inputs.group class="col-sm-12">
+    {{-- <x-inputs.group class="col-sm-12">
         <x-inputs.select name="role" label="Role">
             @php $selected = old('role', ($editing ? $user->role : 'client')) @endphp
             <option value="client" {{ $selected == 'client' ? 'selected' : '' }} >Client</option>
@@ -9,7 +9,7 @@
             <option value="admin" {{ $selected == 'admin' ? 'selected' : '' }} >Admin</option>
             <option value="super_admin" {{ $selected == 'super_admin' ? 'selected' : '' }} >Super admin</option>
         </x-inputs.select>
-    </x-inputs.group>
+    </x-inputs.group> --}}
 
     <x-inputs.group class="col-sm-12">
         <x-inputs.text

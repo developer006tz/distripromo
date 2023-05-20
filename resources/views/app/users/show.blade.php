@@ -26,7 +26,7 @@
             <div class="mt-4">
                 <div class="mb-4">
                     <h5>@lang('crud.manage_users.inputs.role')</h5>
-                    <span>{{ $user->role ?? '-' }}</span>
+                    <span>{{ $user->getRoleNames()[0] ?? '-' }}</span>
                 </div>
                 <div class="mb-4">
                     <h5>@lang('crud.manage_users.inputs.name')</h5>
