@@ -15,7 +15,7 @@
     <meta property="og:title" content="Distripromo - Resell and Grow (Advanced MMS panel)">
     <meta property="og:description" content="The Fastest, Most Affordable, and Most Advanced Digital MMS Panel in the World. Earn a great income by reselling our high-quality social media services. Distripromo is unbeatable in speed, price, and performance.">
     <meta name="format-detection" content="telephone=no">
-    <title>{{$title ?? '-'}}</title>
+    <title>{{str_replace(['.'],'-', Str::ucfirst(request()->route()->getName())) == 'Home' ? 'Dashboard' : str_replace(['.'],'-', Str::ucfirst(request()->route()->getName()))}}</title>
     <script>
         const startTime = performance.now();
         window.addEventListener('load', () => {
@@ -26,7 +26,7 @@
         });
     </script>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.svg') }}">
     <link href="{{asset('theme/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
 	<link href="{{asset('theme/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
 	<link rel="stylesheet" href="{{asset('theme/vendor/nouislider/nouislider.min.css')}}">
@@ -35,10 +35,10 @@
 	
 	<!-- Style css -->
     <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
-    {{-- <script type="module">
+    <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
-         --}}
+        
         @livewireStyles
         @stack('styles')
 </head>
@@ -70,6 +70,10 @@
 
 </div>
 @yield('modals')
+ @livewireScripts
+        
+        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script>
+
     <!-- Required vendors -->
     <script src="{{asset('theme/vendor/global/global.min.js')}}"></script>
     <script src="{{asset('theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>

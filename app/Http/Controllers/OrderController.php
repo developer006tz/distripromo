@@ -55,7 +55,7 @@ class OrderController extends Controller
         $order = Order::create($validated);
 
         return redirect()
-            ->route('orders.edit', $order)
+            ->route('orders.index', $order)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -96,7 +96,7 @@ class OrderController extends Controller
         $order->update($validated);
 
         return redirect()
-            ->route('orders.edit', $order)
+            ->route('orders.index', $order)
             ->withSuccess(__('crud.common.saved'));
     }
 

@@ -57,7 +57,7 @@ class ServiceController extends Controller
         $service = Service::create($validated);
 
         return redirect()
-            ->route('services.edit', $service)
+            ->route('services.index', $service)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -107,7 +107,7 @@ class ServiceController extends Controller
         $service->update($validated);
 
         return redirect()
-            ->route('services.edit', $service)
+            ->route('services.index', $service)
             ->withSuccess(__('crud.common.saved'));
     }
 

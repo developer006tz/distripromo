@@ -62,7 +62,7 @@
                             <td>{{ $socialMediaPlatform->name ?? '-' }}</td>
                             <td>
                                 <x-partials.thumbnail
-                                    src="{{ $socialMediaPlatform->image ? \Storage::url($socialMediaPlatform->image) : '' }}"
+                                    src="{{ $socialMediaPlatform->image ? url(\Storage::url($socialMediaPlatform->image)) : '' }}"
                                 />
                             </td>
                             <td>{{ $socialMediaPlatform->status ?? '-' }}</td>

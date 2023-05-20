@@ -14,7 +14,7 @@
 
     <x-inputs.group class="col-sm-12">
         <div
-            x-data="imageViewer('{{ $editing && $socialMediaPlatform->image ? \Storage::url($socialMediaPlatform->image) : '' }}')"
+            x-data="imageViewer('{{ $editing && $socialMediaPlatform->image ? url(\Storage::url($socialMediaPlatform->image)) : '' }}')"
         >
             <x-inputs.partials.label
                 name="image"

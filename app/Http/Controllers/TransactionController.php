@@ -63,7 +63,7 @@ class TransactionController extends Controller
         $transaction = Transaction::create($validated);
 
         return redirect()
-            ->route('transactions.edit', $transaction)
+            ->route('transactions.index', $transaction)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -108,7 +108,7 @@ class TransactionController extends Controller
         $transaction->update($validated);
 
         return redirect()
-            ->route('transactions.edit', $transaction)
+            ->route('transactions.index', $transaction)
             ->withSuccess(__('crud.common.saved'));
     }
 

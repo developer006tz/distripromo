@@ -54,7 +54,7 @@ class VendorController extends Controller
         $vendor = Vendor::create($validated);
 
         return redirect()
-            ->route('vendors.edit', $vendor)
+            ->route('vendors.index', $vendor)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -99,7 +99,7 @@ class VendorController extends Controller
         $vendor->update($validated);
 
         return redirect()
-            ->route('vendors.edit', $vendor)
+            ->route('vendors.index', $vendor)
             ->withSuccess(__('crud.common.saved'));
     }
 

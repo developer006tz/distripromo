@@ -58,7 +58,7 @@ class SocialMediaPlatformController extends Controller
         $socialMediaPlatform = SocialMediaPlatform::create($validated);
 
         return redirect()
-            ->route('social-media-platforms.edit', $socialMediaPlatform)
+            ->route('social-media-platforms.index', $socialMediaPlatform)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -113,7 +113,7 @@ class SocialMediaPlatformController extends Controller
         $socialMediaPlatform->update($validated);
 
         return redirect()
-            ->route('social-media-platforms.edit', $socialMediaPlatform)
+            ->route('social-media-platforms.index', $socialMediaPlatform)
             ->withSuccess(__('crud.common.saved'));
     }
 

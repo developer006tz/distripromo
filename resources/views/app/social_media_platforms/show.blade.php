@@ -33,7 +33,7 @@
                 <div class="mb-4">
                     <h5>@lang('crud.media_platforms.inputs.image')</h5>
                     <x-partials.thumbnail
-                        src="{{ $socialMediaPlatform->image ? \Storage::url($socialMediaPlatform->image) : '' }}"
+                        src="{{ $socialMediaPlatform->image ? url(\Storage::url($socialMediaPlatform->image)) : '' }}"
                         size="150"
                     />
                 </div>

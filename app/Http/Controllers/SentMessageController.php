@@ -58,7 +58,7 @@ class SentMessageController extends Controller
         $sentMessage = SentMessage::create($validated);
 
         return redirect()
-            ->route('sent-messages.edit', $sentMessage)
+            ->route('sent-messages.index', $sentMessage)
             ->withSuccess(__('crud.common.created'));
     }
 
@@ -102,7 +102,7 @@ class SentMessageController extends Controller
         $sentMessage->update($validated);
 
         return redirect()
-            ->route('sent-messages.edit', $sentMessage)
+            ->route('sent-messages.index', $sentMessage)
             ->withSuccess(__('crud.common.saved'));
     }
 
