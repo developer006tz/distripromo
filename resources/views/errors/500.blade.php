@@ -12,7 +12,7 @@
 	
 	<!-- FAVICONS ICON -->
 	 <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo-blue.png') }}">
-    <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('theme/assets/css/style.css')}}" rel="stylesheet">
     
 </head>
 
@@ -38,8 +38,8 @@
 	Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="{{asset('theme/vendor/global/global.min.js')}}"></script>
-<script src="{{asset('theme/js/custom.min.js')}}"></script>
-<script src="{{asset('theme/js/dlabnav-init.js')}}"></script>
+<script src="{{asset('theme/assets/vendor/global/global.min.js')}}"></script>
+<script src="{{asset('theme/assets/js/custom.min.js')}}"></script>
+<script src="{{asset('theme/assets/js/dlabnav-init.js')}}"></script>
 </body>
 </html>

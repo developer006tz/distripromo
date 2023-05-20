@@ -27,14 +27,14 @@
     </script>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ URL::to('website/assets/img/logo/logo.svg') }}">
-    <link href="{{asset('theme/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
-	<link href="{{asset('theme/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
-	<link rel="stylesheet" href="{{asset('theme/vendor/nouislider/nouislider.min.css')}}">
+    <link href="{{asset('theme/assets/vendor/jquery-nice-select/css/nice-select.css')}}" rel="stylesheet">
+	<link href="{{asset('theme/assets/vendor/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+	<link rel="stylesheet" href="{{asset('theme/assets/vendor/nouislider/nouislider.min.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js" defer></script>
 	
 	<!-- Style css -->
-    <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('theme/assets/css/style.css')}}" rel="stylesheet">
     {{-- <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
@@ -75,46 +75,46 @@
         <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false" data-turbo-eval="false"></script> --}}
 
     <!-- Required vendors -->
-    <script src="{{asset('theme/vendor/global/global.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/chart.js/Chart.bundle.min.js')}}"></script>
-    <script src="{{asset('theme/js/dashboard/dashboard-1.js')}}"></script>
-    <script src="{{asset('theme/js/custom.min.js')}}"></script>
-    <script src="{{asset('theme/js/dlabnav-init.js')}}"></script>
-    <script src="{{asset('theme/js/demo.js')}}"></script>
-    <script src="{{asset('theme/js/styleSwitcher.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/global/global.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/chart.js/Chart.bundle.min.js')}}"></script>
+    <script src="{{asset('theme/assets/js/dashboard/dashboard-1.js')}}"></script>
+    <script src="{{asset('theme/assets/js/custom.min.js')}}"></script>
+    <script src="{{asset('theme/assets/js/dlabnav-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/demo.js')}}"></script>
+    <script src="{{asset('theme/assets/js/styleSwitcher.js')}}"></script>
     <!-- Chart piety plugin files -->
     <script src="{{asset('vendor/peity/jquery.peity.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/owl-carousel/owl.carousel.js')}}"></script>
-    <script src="{{asset('theme/vendor/nouislider/nouislider.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/wnumb/wNumb.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/nouislider-init.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/jquery-nice-select/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/owl-carousel/owl.carousel.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/nouislider/nouislider.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/wnumb/wNumb.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/nouislider-init.js')}}"></script>
     
 
-    <script src="{{asset('theme/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/promise-polyfill/polyfill.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
-    <script src="{{asset('theme/vendor/promise-polyfill/polyfill.min.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/sweetalert.init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/toastr-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/jquery.sparkline-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/select2-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/summernote-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/data-table-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/bs-datetimepicker-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/jquery.maskedinput-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/jquery.validate-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-pickers-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-repeater-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-fileupload-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-inputmask-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-select2-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-editor-summernote-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/jquery-steps-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/bs-stepper-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/jquery.validate-init.js')}}"></script>
-    <script src="{{asset('theme/js/plugins-init/form-repeater-init.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/promise-polyfill/polyfill.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/sweetalert2/dist/sweetalert2.min.js')}}"></script>
+    <script src="{{asset('theme/assets/vendor/promise-polyfill/polyfill.min.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/sweetalert.init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/toastr-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/jquery.sparkline-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/select2-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/summernote-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/data-table-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/bs-datetimepicker-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/jquery.maskedinput-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/jquery.validate-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-pickers-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-repeater-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-fileupload-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-inputmask-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-select2-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-editor-summernote-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/jquery-steps-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/bs-stepper-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/jquery.validate-init.js')}}"></script>
+    <script src="{{asset('theme/assets/js/plugins-init/form-repeater-init.js')}}"></script>
     <script>
 		function cardsCenter()
 		{
