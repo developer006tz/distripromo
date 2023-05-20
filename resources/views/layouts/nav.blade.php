@@ -215,10 +215,12 @@
                         </div>
                         <ul class="navbar-nav header-right">
 							<li class="nav-item d-flex align-items-center">
+								<form >
 								<div class="input-group search-area">
-									<input type="text" class="form-control" placeholder="Search here...">
+									<input type="text" class="form-control" type="text" name="search"  value="{{ $search ?? '' }}" placeholder="Search here...">
 									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
 								</div>
+								</form>
 							</li>
 							<li class="nav-item dropdown notification_dropdown">
                                 <a class="nav-link " href="javascript:void(0);">

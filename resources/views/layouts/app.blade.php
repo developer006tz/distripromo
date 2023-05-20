@@ -35,10 +35,10 @@
 	
 	<!-- Style css -->
     <link href="{{asset('theme/css/style.css')}}" rel="stylesheet">
-    <script type="module">
+    {{-- <script type="module">
             import hotwiredTurbo from 'https://cdn.skypack.dev/@hotwired/turbo';
         </script>
-        
+         --}}
         @livewireStyles
         @stack('styles')
 </head>

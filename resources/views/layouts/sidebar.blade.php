@@ -4,6 +4,7 @@
         <div class="dlabnav">
             <div class="dlabnav-scroll">
 				<ul class="metismenu" id="menu">
+                    @auth
                     <li><a class="has-arrow " href="{{route('home')}}" aria-expanded="false">
 							<i class="fas fa-home"></i>
 							<span class="nav-text">Dashboard</span>
@@ -13,132 +14,120 @@
 						</ul>
 
                     </li>
-					
+					 @can('view-any', App\Models\SocialMediaPlatform::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 						<i class="fas fa-info-circle"></i>
-							<span class="nav-text">Apps</span>
+							<span class="nav-text">Social Medias</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="app-profile.html">Profile</a></li>
-							<li><a href="post-details.html">Post Details</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="email-compose.html">Compose</a></li>
-                                    <li><a href="email-inbox.html">Inbox</a></li>
-                                    <li><a href="email-read.html">Read</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="app-calender.html">Calendar</a></li>
-							<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Shop</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="ecom-product-grid.html">Product Grid</a></li>
-									<li><a href="ecom-product-list.html">Product List</a></li>
-									<li><a href="ecom-product-detail.html">Product Details</a></li>
-									<li><a href="ecom-product-order.html">Order</a></li>
-									<li><a href="ecom-checkout.html">Checkout</a></li>
-									<li><a href="ecom-invoice.html">Invoice</a></li>
-									<li><a href="ecom-customers.html">Customers</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="{{ route('social-media-platforms.index') }}">View all</a></li>
+							<li><a href="{{ route('social-media-platforms.create') }}">Add new</a></li>
                         </ul>
                     </li>
+                    @endcan
+                     @can('view-any', App\Models\Service::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fas fa-chart-line"></i>
-							<span class="nav-text">Charts</span>
+							<span class="nav-text">Services</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="chart-flot.html">Flot</a></li>
-                            <li><a href="chart-morris.html">Morris</a></li>
-                            <li><a href="chart-chartjs.html">Chartjs</a></li>
-                            <li><a href="chart-chartist.html">Chartist</a></li>
-                            <li><a href="chart-sparkline.html">Sparkline</a></li>
-                            <li><a href="chart-peity.html">Peity</a></li>
+                            <li><a href="{{ route('services.index') }}">View all</a></li>
+                            <li><a href="{{ route('services.create') }}">Add new</a></li>
                         </ul>
                     </li>
+                    @endcan
+                    @can('view-any', App\Models\Vendor::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fab fa-bootstrap"></i>
-							<span class="nav-text">Bootstrap</span>
+							<span class="nav-text">Payment Agents</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="ui-accordion.html">Accordion</a></li>
-                            <li><a href="ui-alert.html">Alert</a></li>
-                            <li><a href="ui-badge.html">Badge</a></li>
-                            <li><a href="ui-button.html">Button</a></li>
-                            <li><a href="ui-modal.html">Modal</a></li>
-                            <li><a href="ui-button-group.html">Button Group</a></li>
-                            <li><a href="ui-list-group.html">List Group</a></li>
-                            <li><a href="ui-card.html">Cards</a></li>
-                            <li><a href="ui-carousel.html">Carousel</a></li>
-                            <li><a href="ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="ui-popover.html">Popover</a></li>
-                            <li><a href="ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="ui-tab.html">Tab</a></li>
-                            <li><a href="ui-typography.html">Typography</a></li>
-                            <li><a href="ui-pagination.html">Pagination</a></li>
-                            <li><a href="ui-grid.html">Grid</a></li>
+                            <li><a href="{{ route('vendors.index') }}">View all</a></li>
+                            <li><a href="{{ route('vendors.create') }}">Add new</a></li>
 
                         </ul>
                     </li>
+                    @endcan
+                    @can('view-any', App\Models\Order::class)
+
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fas fa-heart"></i>
-							<span class="nav-text">Plugins</span>
+							<span class="nav-text">Orders</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="uc-select2.html">Select 2</a></li>
-                            <li><a href="uc-nestable.html">Nestedable</a></li>
-                            <li><a href="uc-noui-slider.html">Noui Slider</a></li>
-                            <li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-                            <li><a href="uc-toastr.html">Toastr</a></li>
-                            <li><a href="map-jqvmap.html">Jqv Map</a></li>
-							<li><a href="uc-lightgallery.html">Light Gallery</a></li>
+                            <li><a href="{{ route('orders.index') }}">View all</a></li>
                         </ul>
                     </li>
-                    <li><a href="widget-basic.html" class="" aria-expanded="false">
+                    @endcan
+                    {{-- <li><a href="widget-basic.html" class="" aria-expanded="false">
 							<i class="fas fa-user-check"></i>
 							<span class="nav-text">Widget</span>
 						</a>
-					</li>
+					</li> --}}
+                    @can('view-any', App\Models\Transaction::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fas fa-file-alt"></i>
-							<span class="nav-text">Forms</span>
+							<span class="nav-text">Transactions</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="form-element.html">Form Elements</a></li>
-                            <li><a href="form-wizard.html">Wizard</a></li>
-                            <li><a href="form-ckeditor.html">CkEditor</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation.html">Form Validate</a></li>
+                            <li><a href="{{ route('transactions.index') }}">View all</a></li>
                         </ul>
                     </li>
+                    @endcan
+                    @can('view-any', App\Models\SentMessage::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fas fa-table"></i>
-							<span class="nav-text">Table</span>
+							<span class="nav-text">Sms & Notfs</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
+                            <li><a href="{{ route('sent-messages.index') }}">send sms</a></li>
+                            @can('view-any', App\Models\Message::class)
+                            <li><a href="{{ route('messages.index') }}">sms templates</a></li>
+                            @endcan
                         </ul>
                     </li>
+                    @endcan
+                     @can('view-any', App\Models\Users::class)
                     <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
-							<i class="fas fa-clone"></i>
-							<span class="nav-text">Pages</span>
+							<i class="fas fa-user-check"></i>
+							<span class="nav-text">Manage users</span>
 						</a>
                         <ul aria-expanded="false">
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="page-error-400.html">Error 400</a></li>
-                                    <li><a href="page-error-403.html">Error 403</a></li>
-                                    <li><a href="page-error-404.html">Error 404</a></li>
-                                    <li><a href="page-error-500.html">Error 500</a></li>
-                                    <li><a href="page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
-                            <li><a href="empty-page.html">Empty Page</a></li>
+                            <li><a href="{{ route('users.index') }}">View all</a></li>
+                            <li><a href="{{ route('users.create') }}">Add new</a></li>
                         </ul>
                     </li>
+                    @endcan
+                    @if (Auth::user()->can('view-any', Spatie\Permission\Models\Role::class) ||
+                    Auth::user()->can('view-any', Spatie\Permission\Models\Permission::class))
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="fas fa-lock"></i>
+							<span class="nav-text">Access control</span>
+						</a>
+                        <ul aria-expanded="false">
+                            @can('view-any', Spatie\Permission\Models\Role::class)
+                            <li><a href="{{ route('roles.index') }}">Roles</a></li>
+                            @endcan
+                            @can('view-any', Spatie\Permission\Models\Permission::class)
+                            <li><a href="{{ route('permissions.index') }}">Permissions</a></li>
+                            @endcan
+                        </ul>
+                    </li>
+
+                    @can('view-any', App\Models\Settings::class)
+                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+							<i class="fas fa-cogs"></i>
+							<span class="nav-text">System settings</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="#">View all</a></li>
+                        </ul>
+                    </li>
+                    @endcan
+
+                    @endif
+                    @endauth
+
                 </ul>
 			</div>
         </div>
